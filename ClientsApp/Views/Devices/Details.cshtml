@@ -1,0 +1,42 @@
+﻿@model ClientsApp.Models.Device
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Device</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.deviceType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deviceType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deviceModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deviceModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deviceGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deviceGrade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
